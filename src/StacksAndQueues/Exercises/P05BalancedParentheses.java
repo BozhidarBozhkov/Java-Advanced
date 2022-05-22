@@ -31,7 +31,7 @@ public class P05BalancedParentheses {
                 }
             }
         }
-        if (isBalanced) {
+        if (isBalanced && openingBrackets.isEmpty()) {
             System.out.println("YES");
         } else {
             System.out.println("NO");
