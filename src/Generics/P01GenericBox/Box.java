@@ -3,7 +3,7 @@ package Generics.P01GenericBox;
 public class Box<T> {
     T element;
 
-    public Box (T element) {
+    public Box(T element) {
         this.element = element;
     }
 
