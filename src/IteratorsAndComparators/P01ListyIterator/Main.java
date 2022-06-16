@@ -39,6 +39,12 @@ public class Main {
                 case "HasNext":
                     System.out.println(listyIterator.hasNext());
                     break;
+                case "PrintAll":
+                    for (String element : listyIterator) {
+                        System.out.print(element + " ");
+                    }
+                    System.out.println();
+                    break;
             }
 
             line = scanner.nextLine();
