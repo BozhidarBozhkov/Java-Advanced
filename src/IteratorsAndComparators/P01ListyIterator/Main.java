@@ -1,0 +1,48 @@
+package IteratorsAndComparators.P01ListyIterator;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        String line = scanner.nextLine();
+        ListyIterator listyIterator = null;
+        while (!line.equals("END")) {
+            String[] commandParts = line.split(" ");
+            String commandName = commandParts[0];
+            switch (commandName) {
+                case "Create":
+                    if (commandParts.length > 1) {
+                        listyIterator = new ListyIterator(Arrays.copyOfRange(commandParts, 1, commandParts.length));
+                    } else {
+                        listyIterator = new ListyIterator();
+                    }
+//                    String[] elements = new String[commandParts.length - 1];
+//                    for (int i = 1; i < commandParts.length; i++) {
+//                        elements[i - 1] = commandParts[i];
+//                    }
+
+                    break;
+                case "Move":
+                    System.out.println(listyIterator.move());
+                    break;
+                case "Print":
+                    try {
+
+                        listyIterator.print();
+                    } catch (IllegalStateException e) {
+                        System.out.println("Invalid Operation!");
+                    }
+                    break;
+                case "HasNext":
+                    System.out.println(listyIterator.hasNext());
+                    break;
+            }
+
+            line = scanner.nextLine();
+        }
+    }
+
+}
