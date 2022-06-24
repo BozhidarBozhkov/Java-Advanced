@@ -1,4 +1,4 @@
-package easterBasket;
+package ExamPrep.easterBasket;
 
 public class Main {
     public static void main(String[] args) {

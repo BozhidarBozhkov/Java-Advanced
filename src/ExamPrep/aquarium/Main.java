@@ -1,4 +1,4 @@
-package aquarium;
+package ExamPrep.aquarium;
 
 public class Main {
     public static void main(String[] args) {

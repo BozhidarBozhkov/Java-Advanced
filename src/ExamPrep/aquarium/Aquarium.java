@@ -1,8 +1,6 @@
-package aquarium;
+package ExamPrep.aquarium;
 
-import java.util.ArrayList;
 import java.util.LinkedHashSet;
-import java.util.List;
 import java.util.Set;
 
 public class Aquarium {

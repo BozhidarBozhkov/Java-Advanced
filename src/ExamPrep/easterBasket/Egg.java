@@ -1,4 +1,4 @@
-package easterBasket;
+package ExamPrep.easterBasket;
 
 public class Egg {
     private String color;

@@ -1,4 +1,4 @@
-package easterBasket;
+package ExamPrep.easterBasket;
 
 import java.util.ArrayList;
 import java.util.Comparator;

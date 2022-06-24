@@ -1,9 +1,9 @@
-package hotel;
+package ExamPrep.hotel;
 
 public class Main {
     public static void main(String[] args) {
         // TODO
-        //Initialize the repository (hotel)
+        //Initialize the repository (ExamPrep.hotel)
 
         Hotel hotel = new Hotel("Hilton", 30);
 
@@ -59,6 +59,6 @@ public class Main {
 
 //Remove Person
 
-        System.out.println(hotel.remove("Alice")); //true // Get Statistics System.out.println(hotel.getStatistics()); // The people in the hotel Hilton are: // Person Mark: 11111, Age: 41, Hometown: Sofia // Person Lizzy: 31311, Age: 24, Hometown: Varna // Person Lucy: 54122, Age: 31, Hometown: Birmingham // Person Maria: 66611, Age: 41, Hometown: Sofia
+        System.out.println(hotel.remove("Alice")); //true // Get Statistics System.out.println(ExamPrep.hotel.getStatistics()); // The people in the ExamPrep.hotel Hilton are: // Person Mark: 11111, Age: 41, Hometown: Sofia // Person Lizzy: 31311, Age: 24, Hometown: Varna // Person Lucy: 54122, Age: 31, Hometown: Birmingham // Person Maria: 66611, Age: 41, Hometown: Sofia
     }
 }

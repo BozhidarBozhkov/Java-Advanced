@@ -1,4 +1,4 @@
-package hotel;
+package ExamPrep.hotel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,7 +34,7 @@ public class Hotel {
 
     public String getStatistics() {
         StringBuilder sb = new StringBuilder();
-        sb.append(String.format("The people in the hotel %s are:%n", this.name));
+        sb.append(String.format("The people in the ExamPrep.hotel %s are:%n", this.name));
 
         for (Person person : roster) {
             sb.append(String.format("%s%n", person.toString()));
